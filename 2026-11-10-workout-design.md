@@ -182,7 +182,7 @@ se ha hecho, se usan los valores de la plantilla. Calculado en el móvil con el 
 | 12 | Elegir y editar entrenos | Pantalla "Entrenar" con lista; ajustes puntuales al empezar; edición permanente aparte |
 | 13 | Doble factor en el login | Obligatorio: TOTP si está configurado; si no, código por email |
 | 14 | Dónde se activa el TOTP | En Ajustes de la app (QR, códigos de recuperación, desactivar) |
-| 15 | Descanso entre ejercicios (cambio post-v1) | Ajuste global "Descanso entre ejercicios", 20 s por defecto, aplicado en todos los bloques en lugar del descanso por ejercicio; el descanso entre series se mantiene; entre bloques, pantalla de continuar sin descanso |
+| 15 | Descansos automáticos (cambio post-v1) | Ajustes globales que sustituyen al descanso por ejercicio: 15 s entre ejercicios en el bloque principal, 5 s en calentamiento/enfriamiento y 5 s para cambiar de lado en ejercicios unilaterales por tiempo; el descanso entre series se mantiene; entre bloques, pantalla de continuar sin descanso |
 
 ## Decisiones del diseñador (a revisar)
 - Ejercicios unilaterales: detectados por nombre, tiempo partido con aviso "cambia de lado", reps por lado.
