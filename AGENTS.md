@@ -20,9 +20,9 @@ v1.1, planes de implementación por versión (`plans/`) e imágenes de ejercicio
 ## Sistema de tareas
 
 Tareas en Workspace (proyecto `WRKD`), nunca en el repositorio. El ciclo (`/init-task` → `/start-task` →
-`/close-task`, más `/create-task`) y las reglas de IA son los compartidos de `~/.agents/workspace-kit`
-(`AGENTS.shared.md`, importado desde `CLAUDE.md`); la configuración de este repo está en
-`.claude/task-system.conf`. Una tarea = un worktree en `.worktrees/<clave>` + una rama
+`/close-task`, más `/create-task`) y las reglas de IA son la configuración global de
+`~/.agents/workspace-kit` (skills en `~/.claude/skills`, reglas importadas desde `~/.claude/CLAUDE.md`);
+este repo solo aporta `.claude/task-system.conf` y lo específico de este fichero. Una tarea = un worktree en `.worktrees/<clave>` + una rama
 `<feat|fix|chore|research|docs>/wrkd-NNNN-<slug>` desde `origin/main` + un PR a `main`.
 
 - Sin puerta automática: el cierre describe la revisión manual (enlaces, coherencia entre plan,
