@@ -14,7 +14,7 @@ v1.1, planes de implementación por versión (`plans/`) e imágenes de ejercicio
 
 - Los planes y la especificación describen lo que implementan `workout-api` y `workout-app`: un cambio
   de comportamiento se decide aquí antes de implementarse allí.
-- Rama única `main`. Nunca commits directos: cada cambio entra por una tarea y su PR a `main`.
+- Ramas `develop` (integración), `staging` y `main`. Nunca commits directos: cada cambio entra por una tarea y su PR a `develop`; `/deploy-staging` y `/deploy-production` promocionan, solo a petición.
 - Commits convencionales (`docs: ...`).
 
 ## Sistema de tareas
@@ -23,7 +23,7 @@ Tareas en Workspace (proyecto `WRKD`), nunca en el repositorio. El ciclo (`/init
 `/close-task`, más `/create-task`) y las reglas de IA son la configuración global de
 `~/.agents/workspace-kit` (skills en `~/.claude/skills`, reglas importadas desde `~/.claude/CLAUDE.md`);
 este repo solo aporta `.claude/task-system.conf` y lo específico de este fichero. Una tarea = un worktree en `.worktrees/<clave>` + una rama
-`<feat|fix|chore|research|docs>/wrkd-NNNN-<slug>` desde `origin/main` + un PR a `main`.
+`<feat|fix|chore|research|docs>/wrkd-NNNN-<slug>` desde `origin/develop` + un PR a `develop`.
 
 - Sin puerta automática: el cierre describe la revisión manual (enlaces, coherencia entre plan,
   especificación y lo ya implementado).
