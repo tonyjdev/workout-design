@@ -1,1 +1,14 @@
 /.worktrees
+
+# Archify diagrams (docs/diagramas): only the source (*.<type>.json) is versioned.
+# The HTML (~850 KB, viewer included) and the validation artefacts are rebuilt
+# locally with ~/.agents/workspace-kit/bin/diagrams.sh.
+docs/diagramas/**/*.html
+docs/diagramas/**/*.delivery.json
+docs/diagramas/**/*.delivery-pending.json
+docs/diagramas/**/*.finalize.json
+docs/diagramas/**/*.finalize-summary.json
+docs/diagramas/**/*.browser-check.json
+docs/diagramas/**/*.visual-check.*
+docs/diagramas/**/review-*/
+docs/diagramas/**/visual-check/
